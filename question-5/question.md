@@ -1,6 +1,7 @@
-# Front-end Challenge – JavaScript Button Toggle
+promblem 5. Front-end Challenge – JavaScript Button Toggle
 
-## Problem Description
+Problem Description:
+
 Modify the existing JavaScript application to implement a toggle button that switches between **ON** and **OFF** states when clicked.
 
 When the button is clicked:
@@ -10,12 +11,12 @@ When the button is clicked:
 - Do not replace the entire DOM element.
 - You can add CSS classes and styles, but must keep the existing element IDs unchanged.
 
-## Expected Output
+ Expected Output
 - Clicking the button changes ON to OFF.
 - Clicking again changes OFF to ON.
 - The button should toggle continuously between both states.
 
-## Requirements
+ Requirements
 - Use JavaScript DOM manipulation.
 - Preserve existing element IDs.
 - Update only the button text.
@@ -24,6 +25,3 @@ When the button is clicked:
 ## Concepts Used
 JavaScript, DOM Manipulation, Event Listeners, Button Events, Conditional Statements, Front-end Development.
 
-**Language:** JavaScript  
-**Difficulty:** Beginner  
-**Category:** Front-end Development

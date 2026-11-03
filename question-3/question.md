@@ -1,6 +1,6 @@
-# Array Challenge – Binary Tree Validation
+ Array Challenge – Binary Tree Validation
 
-## Problem Description
+Problem Description
 Given an array of strings containing integer pairs in `(child, parent)` format, determine whether the pairs can form a valid binary tree.
 
 A valid binary tree must satisfy:
@@ -12,21 +12,19 @@ A valid binary tree must satisfy:
 Return `"true"` if a valid binary tree can be formed; otherwise, return `"false"`.
 
 ## Example 1
-**Input:**
+Input:
 ```python
 ["(1,2)", "(2,4)", "(7,2)"]
 ```
-**Output:** `true`
+Output: `true`
 
 ## Example 2
-**Input:**
+Input:
 ```python
 ["(1,2)", "(3,2)", "(2,12)", "(5,2)"]
 ```
-**Output:** `false`
+Output: `false`
 
-## Concepts Used
+ Concepts Used
 Python, Arrays, Dictionaries, Sets, Binary Trees, DFS, Recursion.
 
-**Language:** Python 3  
-**Difficulty:** Intermediate
