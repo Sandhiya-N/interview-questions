@@ -1,0 +1,33 @@
+def ArrayChallenge(strArr):
+    children = set()
+    count = {}
+    pairs = []
+
+    for s in strArr:
+        c, p = map(int, s.strip("()").split(","))
+
+        if c in children or count.get(p, 0) == 2:
+            return "false"
+
+        children.add(c)
+        count[p] = count.get(p, 0) + 1
+        pairs.append((c, p))
+
+    nodes = set()
+    for c, p in pairs:
+        nodes.update([c, p])
+
+    if len(nodes - children) != 1:
+        return "false"
+
+    graph = dict(pairs)
+    for node in nodes:
+        seen = set()
+        while node in graph:
+            if node in seen:
+                return "false"
+            seen.add(node)
+            node = graph[node]
+
+    return "true"
+print(ArrayChallenge(input()))

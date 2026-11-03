@@ -1,0 +1,17 @@
+def StringChallenge(strParam):
+    # remove surrounding spaces/quotes in case the input includes them
+    s = strParam.strip().strip('"').strip("'")
+    s = ''.join(c for c in s if c.isalpha())
+
+    best = 0
+    for ch in set(s):
+        first = s.find(ch)
+        last = s.rfind(ch)
+
+        if first != last:
+            best = max(best, len(set(s[first + 1:last])))
+
+    return best
+
+# keep this function call here
+print(StringChallenge(input()))
